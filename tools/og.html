@@ -1,0 +1,58 @@
+<!doctype html>
+<!-- Social preview template, rendered to assets/og.jpg at 1200x630.
+     See README "Social preview and icons". -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: Inter, ui-sans-serif, -apple-system, "Segoe UI", "PingFang SC", sans-serif;
+    color: #f3f6f2; position: relative;
+    background:
+      radial-gradient(520px 420px at 82% 8%, rgba(135, 245, 207, .13), transparent 70%),
+      radial-gradient(460px 380px at 96% 100%, rgba(93, 200, 255, .12), transparent 70%),
+      linear-gradient(135deg, #0b0e14, #13201d);
+  }
+  .copy { position: absolute; left: 84px; top: 0; bottom: 0; width: 600px; display: flex; flex-direction: column; justify-content: center; }
+  .brand { display: flex; align-items: center; gap: 18px; font-size: 40px; font-weight: 750; letter-spacing: -.03em; }
+  .brand img { width: 64px; height: 64px; }
+  .brand b { color: #ffb38a; }
+  .eyebrow { margin: 46px 0 16px; color: #87f5cf; font-size: 20px; font-weight: 600; letter-spacing: .17em; }
+  h1 { margin: 0; font-size: 76px; font-weight: 680; letter-spacing: -.06em; line-height: .98; }
+  h1 em { color: #87f5cf; font-style: normal; }
+  .url { margin-top: 34px; color: #a6b3ad; font: 22px ui-monospace, "SF Mono", Menlo, monospace; }
+  .map { position: absolute; left: 700px; top: 75px; width: 440px; height: 480px; }
+  .map svg { position: absolute; inset: 0; }
+  .map path { fill: none; stroke: rgba(135, 245, 207, .4); stroke-width: 1.5; stroke-dasharray: 6 10; }
+  .ring { position: absolute; left: 50%; top: 50%; border: 1px solid rgba(135, 245, 207, .2); border-radius: 50%; transform: translate(-50%, -50%) rotate(-16deg); }
+  .core { position: absolute; left: 50%; top: 50%; width: 120px; height: 120px; display: grid; place-content: center; text-align: center;
+          border: 1px solid rgba(135, 245, 207, .65); border-radius: 50%; background: rgba(11, 25, 24, .92); transform: translate(-50%, -50%);
+          box-shadow: 0 0 0 13px rgba(135, 245, 207, .06), 0 0 50px rgba(135, 245, 207, .25); }
+  .core strong { color: #87f5cf; font-size: 40px; letter-spacing: -.07em; line-height: 1; }
+  .node { position: absolute; display: flex; align-items: center; gap: 12px; padding: 14px 18px; border: 1px solid rgba(211, 232, 222, .18);
+          border-radius: 16px; background: rgba(15, 23, 29, .9); box-shadow: 0 16px 36px rgba(0, 0, 0, .3); }
+  .node i { display: grid; width: 40px; height: 40px; place-items: center; border-radius: 11px; background: rgba(135, 245, 207, .12); color: #87f5cf; font-style: normal; font-size: 20px; }
+  .node b { display: block; font-size: 22px; }
+  .node small { color: #8a9893; font-size: 16px; }
+  .n1 { left: 0; top: 30px; } .n2 { right: 0; top: 50px; } .n3 { right: 10px; bottom: 30px; }
+</style>
+</head>
+<body>
+  <div class="copy">
+    <div class="brand"><img src="../assets/favicon.svg" alt=""><span>agentx<b>.icu</b></span></div>
+    <div class="eyebrow">OPEN SOURCE · PRIVATE BY DESIGN</div>
+    <h1>Tools for a more<br><em>curious</em> internet.</h1>
+    <div class="url">toxee · MorseCQ · DitMesh</div>
+  </div>
+  <div class="map">
+    <div class="ring" style="width:330px;height:220px"></div>
+    <div class="ring" style="width:420px;height:320px;transform:translate(-50%,-50%) rotate(38deg)"></div>
+    <svg viewBox="0 0 440 480"><path d="M220 240L90 70M220 240L360 90M220 240L350 420"/></svg>
+    <div class="core"><strong>AX</strong></div>
+    <div class="node n1"><i>⌁</i><div><b>toxee</b><small>private chat</small></div></div>
+    <div class="node n2"><i>·−</i><div><b>MorseCQ</b><small>morse trainer</small></div></div>
+    <div class="node n3"><i>⊙</i><div><b>DitMesh</b><small>morse messenger</small></div></div>
+  </div>
+</body>
+</html>
