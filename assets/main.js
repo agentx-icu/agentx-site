@@ -55,6 +55,6 @@
 
   setLanguage(initial, false);
   if (supported.includes(queryLang)) save(queryLang);
-  toggle?.addEventListener('click', () => setLanguage(root.dataset.lang === 'zh' ? 'en' : 'zh'));
+  if (toggle) toggle.addEventListener('click', () => setLanguage(root.dataset.lang === 'zh' ? 'en' : 'zh'));
   document.getElementById('year').textContent = new Date().getFullYear();
 })();
